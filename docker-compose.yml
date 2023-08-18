@@ -16,7 +16,8 @@ services:
     volumes:
       - static:/backend_static
     depends on:
-      - db  
+      - db
+    required: false
   frontend:
     env_file: .env
     build: ./frontend/
