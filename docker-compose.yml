@@ -26,5 +26,3 @@ services:
       - static:/staticfiles/
     ports:
       - 8000:80
-    depends on:
-      - db  
