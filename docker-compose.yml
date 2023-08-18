@@ -21,6 +21,8 @@ services:
     env_file: .env
     build: ./frontend/
   gateway:
+    depends_on:
+      - db
     build: ./gateway/
     volumes:
       - static:/staticfiles/

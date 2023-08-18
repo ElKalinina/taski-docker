@@ -24,6 +24,8 @@ services:
     volumes:
       - static_volume:/frontend_static
   gateway:
+    depends_on:
+      - db
     image: elkalinina/taski_gateway
     env_file: .env
     volumes:
