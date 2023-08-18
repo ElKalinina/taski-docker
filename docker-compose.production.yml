@@ -15,9 +15,6 @@ services:
     env_file: .env
     volumes:
       - static_volume:/backend_static
-    depends on:
-      - db
-    required: false
   frontend:
     image: elkalinina/taski_frontend
     env_file: .env
